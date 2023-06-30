@@ -13,11 +13,22 @@ function CarForm ({ onAddCar }) {
     //Create Object from input form
     const itemData = { make: formData.carMake, model: formData.carModel, year: formData.carYear, trim: formData.carTrim}
     
+    //Fetch POST request and state (onAddNewCar prop) update
+    fetch("http://localhost:4000/cars", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(itemData),
+    })
+      .then(response => response.json())
+      .then(newCar=> onAddCar(newCar))
+
       // reset form
       setFormData({carMake:"", carModel:"", carYear:"", carTrim:"" });
   }
 
-  
+
 
   return (
     <div>
