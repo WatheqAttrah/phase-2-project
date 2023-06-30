@@ -1,8 +1,8 @@
 import React,{ useEffect, useState } from "react";
-import { Route, Switch } from "react-router-dom"
-import NavBar from "../src/conponents/NavBar"
-import CarsList from "../src/conponents/CarsList"
-import CarForm from "../src/conponents/CarForm"
+import { Route, Switch } from "react-router-dom";
+import NavBar from "../src/components/NavBar";
+import CarsList from "../src/components/CarsList";
+import CarForm from "../src/components/CarForm";
 
 
 function App() {
