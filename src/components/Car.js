@@ -11,7 +11,8 @@ return (
         <p>Car Year: <b>{cars.year}</b></p>
         <p>Car Trim: <b>{cars.trim}</b></p>
         <p>Car id: <b>{cars.id}</b></p>
-        <br></br>    
+        <br></br>
+        <button onClick={handleDeleteClick}>Remove</button>    
         <hr></hr>
     </li>
   )
