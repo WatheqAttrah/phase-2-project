@@ -15,13 +15,17 @@ function App() {
     //console.log(cars)
   }, [])
   
+    //Add car cb + state update
+    function handleAddCar(newCar) {
+      setCars([...cars, newCar])
+    }
 
   return (
     <div>
       <NavBar />
       <Switch>
         <Route path="/Form">
-          <CarForm />
+          <CarForm onAddCar={handleAddCar} />
         </Route>
         <Route exact path="/">
           <CarsList cars={cars} setCars={setCars} />

@@ -17,6 +17,8 @@ function CarForm ({ onAddCar }) {
       setFormData({carMake:"", carModel:"", carYear:"", carTrim:"" });
   }
 
+  
+
   return (
     <div>
       <hr></hr>
