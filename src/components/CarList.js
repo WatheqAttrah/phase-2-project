@@ -3,6 +3,14 @@ import Car from "./Car"
 
 function CarsList({ cars, setCars }){
 
+  //delete car cb + state update
+  function handleDeleteCar(deletedCar){
+    const updatedCar = cars.filter(car=> car.id !== deletedCar.id)
+    setCars(updatedCar)
+    }
+    
+  
+
 
 return (
     <div>
@@ -10,7 +18,8 @@ return (
       <ul>
         { cars.map(car => 
           ( <Car key={car.id} 
-                  cars={car} 
+                  cars={car}
+                  onDeleteCar={handleDeleteCar} 
                   /> ) 
             )}
       </ul>
