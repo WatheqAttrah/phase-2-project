@@ -1,6 +1,15 @@
 import React from 'react'
 
-function Car({ cars }) {
+function Car({ cars, onDeleteCar }) {
+  // fetch DELETE and update state thru onDeleteCar prop
+  function handleDeleteClick(){
+    fetch(`http://localhost:4000/cars/${cars.id}`,{
+      method: "DELETE",
+    })
+      .then(response => response.json())
+      .then(()=>onDeleteCar(cars))
+  };
+
 
 
  
