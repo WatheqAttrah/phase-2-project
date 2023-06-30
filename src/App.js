@@ -24,7 +24,7 @@ function App() {
           <CarForm />
         </Route>
         <Route exact path="/">
-          <CarsList />
+          <CarsList cars={cars} setCars={setCars} />
         </Route>
       </Switch>
     </div>
