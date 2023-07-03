@@ -44,10 +44,14 @@
 
 7. Open your browser and visit http://localhost:3000 to view the application.
 
-
-
 # Usage 
 - Navigate to the home page to see the welcome message.
 - Use the navbar to switch between different sections of the application.
 - Fill out the form and submit to create a new entry.
 - Fill the contact form section to learn more about the developer or the purpose of the application.
+
+# Contributing
+. Contributions are welcome! If you find any issues or have suggestions for improvements, please create a new issue or submit a pull request.
+
+# License
+. This project is licensed under the MIT License.
