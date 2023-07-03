@@ -1,14 +1,13 @@
 import './App.css';
 import React, { useEffect, useState } from "react";
-import { Route, Switch } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import CarsList from "./components/CarsList";
-import CarForm from "./components/CarForm";
-import ContactUs from './components/ContactUs';
+import { Route, Switch } from "react-router-dom"; // NavBar Liks
+import NavBar from "./components/NavBar"; //NavBar Component
+import CarForm from "./components/CarForm"; //CarForm Component
+import ContactUs from './components/ContactUs'; //Contact form 
 
 function App() {
   const [cars, setCars] = useState([])
-
+//Useing Effect to fetch data from server as soon as the application is up
   useEffect(()=> {
     fetchCars("http://localhost:4000/cars");
   },[])
@@ -17,7 +16,7 @@ function App() {
       const response = await fetch(`http://localhost:4000/cars`);
       const data = await response.json();
       setCars(data)
-      }catch (error) {
+      }catch (error) { //Catching error 
         console.log(`Error fetching cars: `, error);
       }
     };
