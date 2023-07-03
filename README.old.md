@@ -34,3 +34,12 @@
 4. Install dependencies:
 
     -Inside the terminal:% npm install 
+5. Run server:
+
+    -Inside the terminal:% npm run server
+
+6. Start Application:
+
+    -Inside the terminal:% npm start
+
+7. Open your browser and visit http://localhost:3000 to view the application.
