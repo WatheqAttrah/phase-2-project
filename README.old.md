@@ -22,3 +22,15 @@
 
   Github Link: https://github.com/WatheqAttrah/phase-2-project
 
+
+2. Navigate to the project directory:
+
+    Path: cd phase-2-project
+
+3. Vs-Code:
+
+    -Inside the terminal: %Code . 
+
+4. Install dependencies:
+
+    -Inside the terminal:% npm install 
