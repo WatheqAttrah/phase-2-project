@@ -14,6 +14,7 @@
 - React: JavaScript library for building user interfaces.
 - HTML: Markup language for structuring the web pages.
 - CSS: Stylesheet language for styling the application.
+- JSON: API Objects.
 
 
 ## Setup and Installation
