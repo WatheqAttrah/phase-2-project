@@ -41,9 +41,6 @@ function CarForm ({ onAddCar }) {
         carTrim:"" 
       });
 }
-
-
-
   return (
     <div>
       <hr></hr>
@@ -57,7 +54,6 @@ function CarForm ({ onAddCar }) {
       </form>
       <hr></hr>
     </div>
-   
   );
 }
 

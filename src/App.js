@@ -1,10 +1,10 @@
 import './App.css';
 import React, { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
-import NavBar from "../src/conponents/NavBar";
-import CarsList from "../src/conponents/CarsList";
-import CarForm from "../src/conponents/CarForm";
-import ContactUs from './conponents/ContactUs';
+import NavBar from "./components/NavBar";
+import CarsList from "./components/CarsList";
+import CarForm from "./components/CarForm";
+import ContactUs from './components/ContactUs';
 
 function App() {
   const [cars, setCars] = useState([])

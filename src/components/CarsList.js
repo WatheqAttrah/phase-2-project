@@ -8,7 +8,6 @@ function CarsList({ cars, setCars }){
     const updatedCar = cars.filter(car=> car.id !== deletedCar.id)
     setCars(updatedCar)
     }
-
 return (
     <div>
       <h1>Welcome to my phase-2-project</h1>
