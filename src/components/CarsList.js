@@ -8,17 +8,16 @@ function CarsList({ cars, setCars }){
     const updatedCar = cars.filter(car=> car.id !== deletedCar.id)
     setCars(updatedCar)
     }
-    
-  
-
 
 return (
     <div>
-      <h1>My Cars </h1>
+      <h1>Welcome to my phase-2-project</h1>
+      <hr></hr>
+      <h2>Cars Fetched </h2>
       <ul>
         { cars.map(car => 
           ( <Car key={car.id} 
-                  cars={car}
+                  cars={car} 
                   onDeleteCar={handleDeleteCar} 
                   /> ) 
             )}
