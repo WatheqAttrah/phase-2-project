@@ -10,9 +10,6 @@ function Car({ cars, onDeleteCar }) {
       .then(()=>onDeleteCar(cars))
   };
 
-
-
- 
 return (
     <li> 
         <p>Car Make: <b>{cars.make}</b></p>

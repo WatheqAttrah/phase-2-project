@@ -1,1 +1,10 @@
-# phase-2-project
+# My React Application
+ # Phase 2 project.
+ This is a simple React application that consists of a home page, navbar, form, and contact us form section.
+
+## Features
+
+- Home page: Displays a welcome message or introduction to the application.
+- Navbar: Provides navigation links to different sections of the application.
+- Form: Allows users to submit information and create a new entry.
+- Contact: Request from consisted of 3 entries, usename, email and massage input and submit.
