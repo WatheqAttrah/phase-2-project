@@ -8,3 +8,10 @@
 - Navbar: Provides navigation links to different sections of the application.
 - Form: Allows users to submit information and create a new entry.
 - Contact: Request from consisted of 3 entries, usename, email and massage input and submit.
+
+## Technologies Used
+
+- React: JavaScript library for building user interfaces.
+- HTML: Markup language for structuring the web pages.
+- CSS: Stylesheet language for styling the application.
+
