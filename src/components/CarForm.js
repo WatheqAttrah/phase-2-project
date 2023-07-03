@@ -1,18 +1,27 @@
 import React, { useState } from "react";
 
-
 function CarForm ({ onAddCar }) {
-  const [formData, setFormData] = useState ({carMake:"", carModel:"", carYear:"", carTrim:"" })
-
+  const [formData, setFormData] = useState ({
+    carMake:"",
+    carModel:"",
+    carYear:"", 
+    carTrim:""
+  })
+// Function to Change event on the form 
   function handleChange(event) {
     setFormData({...formData,[event.target.name]: event.target.value,})
   }
 
   function handleSubmit(event) {
+    // Used to prevent the form from refresh
     event.preventDefault();
     //Create Object from input form
-    const itemData = { make: formData.carMake, model: formData.carModel, year: formData.carYear, trim: formData.carTrim}
-    
+    const itemData = { 
+      make: formData.carMake, 
+      model: formData.carModel, 
+      year: formData.carYear, 
+      trim: formData.carTrim
+    }
     //Fetch POST request and state (onAddNewCar prop) update
     fetch("http://localhost:4000/cars", {
       method: "POST",
@@ -25,8 +34,13 @@ function CarForm ({ onAddCar }) {
       .then(newCar=> onAddCar(newCar))
 
       // reset form
-      setFormData({carMake:"", carModel:"", carYear:"", carTrim:"" });
-  }
+      setFormData({
+        carMake:"", 
+        carModel:"", 
+        carYear:"", 
+        carTrim:"" 
+      });
+}
 
 
 
