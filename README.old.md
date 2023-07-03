@@ -15,3 +15,10 @@
 - HTML: Markup language for structuring the web pages.
 - CSS: Stylesheet language for styling the application.
 
+
+## Setup and Installation
+
+1. Clone the repository:
+
+  Github Link: https://github.com/WatheqAttrah/phase-2-project
+
